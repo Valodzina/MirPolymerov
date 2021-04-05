@@ -249,7 +249,7 @@ h4, h2 {
     }
   }
   
-  /* @media screen and (min-width: 641px) and (max-width: 910px) {
+  @media screen and (min-width: 641px) and (max-width: 910px) {
     .ant-carousel {
       max-width: 540px;
     }
@@ -259,7 +259,7 @@ h4, h2 {
     .ant-carousel {
       max-width: 270px;
     }
-  } */
+  }
   
   .ant-carousel {
     margin: 50px auto auto;
@@ -351,6 +351,13 @@ h4, h2 {
     cursor: pointer;
   }  */
 
+  @media screen and (max-width: 1400px) {
+    body {
+      width: 1100px;
+    }
+
+
+  }
 
 
 
