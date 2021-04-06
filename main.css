@@ -1,3 +1,4 @@
+
 body {
     margin:  0px auto;
     padding:0px;
@@ -14,7 +15,7 @@ p, h1, h2, h3, h4, h5, .btn , ul, li {
     color:#270949;
 }
 .introduction {
-  background-image: url(images/back1.jpg) ; 
+  /* background-image: url(images/back1.jpg) ;  */
   background-size: 100%;
 }
 section {
@@ -24,7 +25,7 @@ section {
   justify-content: center;
   width: 1440px; 
   margin: 0px auto 0px auto;
-  background-color: #F7F7F7; 
+  background-color: #FF5B3D; 
 }
 footer {
   margin-top: 50px;
@@ -56,16 +57,21 @@ header {
 
 }
 
-
 div {
   
   padding:0px;
   margin:  0px;
+  
  
 }
+.logodiv {
+  width: 300px;
+}
+
 h4, h2 {
     text-align: center ;
 }
+
 .card {
     width:350px;
     height: 450px;
@@ -76,6 +82,7 @@ h4, h2 {
     color:#F4F4DB;
  
 }
+
 .cardd {
     width:300px;
     height: 400px;
@@ -83,8 +90,9 @@ h4, h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  margin: 40px;
+    margin: 40px;
 }
+
 .card3 {
   width:300px;
   height: 500px;
@@ -96,6 +104,7 @@ h4, h2 {
   padding-right: 20px;
 
 }
+
 .card4 {
   width:500px;
   height: 450px;
@@ -107,9 +116,11 @@ h4, h2 {
   padding-right: 20px;
 
 }
+
 h2 {
   font-size: 30px;
 }
+
 .imgg {
   align-self: center;
 }
@@ -122,28 +133,33 @@ h2 {
     justify-content: center;
 
 }
+
 .screen1 {
   margin: 0px auto 0px auto;
-  /* width: 1100px;  */
+   /* width: 1100px;  */
    
   justify-content: space-between;
   margin-bottom: 50px;
+  background-color: aqua;
 }
+
 .screen2 {
     margin: 0px auto 0px auto;
-    /* width: 1100px;  */
+    width: 1100px; 
      
     display: inline-flex;
     justify-content: space-between;
+    background-color: aqua;
 }
 
 .screen {
  
     margin: 0px auto 0px auto;
-    /* width: 1200px;  */
+    width: 1200px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: aqua;
 }
 .str {
     text-align: center;
@@ -156,14 +172,11 @@ h2 {
 }
 .slider {
   
-    display: flex;
-    /* display: inline-flex; */
-    /* justify-content: space-between; */
-    display: flex;
+  width :1200px;
+  display: flex;
   flex-wrap: wrap;
   align-content: space-around;
-    /* justify-content: center; */
-    
+  background-color: aqua;
 
 }
 .slider3 {
@@ -172,6 +185,7 @@ h2 {
   justify-content: space-between; 
   flex-wrap: wrap;
   align-content: space-around;
+  background-color: aqua;
 }
 
 .content {
@@ -218,21 +232,31 @@ h2 {
 
 
 
-@media screen and (min-width: 911px) {
+@media screen and (min-width: 1400px) {
     .ant-carousel {
       max-width: 1100px;
     }
   }
   
-  @media screen and (min-width: 641px) and (max-width: 910px) {
+  @media screen and (min-width: 991px) and (max-width: 1399px) {
     .ant-carousel {
-      max-width: 540px;
+      max-width: 800px;
     }
   }
   
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 990px) {
     .ant-carousel {
-      max-width: 270px;
+      max-width: 700px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ant-carousel {
+      max-width: 500px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .ant-carousel {
+      max-width: 400px;
     }
   }
   
@@ -287,14 +311,17 @@ h2 {
     left: -40px;
     top: 40%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat; 
+    /* background: url("images/left_arr.png") no-repeat; */
   }
  
    div.ant-carousel-arrow-right {
     right: -40px;
     top: 40%;
     display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    /* width: 400px; */
+     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat; 
+    /* background: url("images/right_arr.png") no-repeat; */
   }
   
   div.ant-carousel-arrow-left:hover {
@@ -306,24 +333,49 @@ h2 {
   } 
   
 
-  @media screen and (max-width: 1400px) {
+  @media (max-width: 1400px){
     body {
       width: 1200px;
     }
-    section, header, footer{
+    section, header, footer, .section3{
       width : 1200px;
     }
-    .content, .screen, .screen1, .screen2 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      width: 800x; 
-      padding-left: 50px;
-      padding-right: 50px;
+    .content, .screen, .screen1, .screen2, .slider, .slider3, .str {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 1000px; 
+     
     }
- 
+    .cardd {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .card3 {
+      width : 700px;
+      height:  300px;
+      margin-bottom: 20px ;
+    }
+    .slider3 {
+    
+      justify-content:center; 
+  
+
+    }
+    .card4 {
+      margin-bottom: 20px ; 
+    }
 
 
-  }
+
+  
+   }
+  @media (max-width: 1199px){ }
+
+  @media (max-width: 991px){ }
+  
+  @media (max-width: 767px){ }
+  
+  @media (max-width: 575px){ }
 
 
 
