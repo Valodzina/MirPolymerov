@@ -1,20 +1,11 @@
 body {
     margin:  0px auto;
     padding:0px;
-     /* color: #F7F7F7;  */
-     /* background-size: 1440px auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 1440px;
-    /*background-color:chocolate;*/
     background-image: url(images/oboi11.png);
-    /* background: rgb(169,229,230);
-background: linear-gradient(0deg, rgba(169,229,230,1) 0%, rgba(196,196,196,1) 78%); */
-/* background: rgb(169,229,230);
-background: linear-gradient(0deg, rgba(169,229,230,1) 0%, rgba(196,196,196,0.6278886554621849) 78%); */
-/* background: rgb(122,127,158);
-background: linear-gradient(0deg, rgba(122,127,158,1) 4%, rgba(208,219,219,1) 98%); */
 
 }
 p, h1, h2, h3, h4, h5, .btn , ul, li {
@@ -25,30 +16,34 @@ p, h1, h2, h3, h4, h5, .btn , ul, li {
 .introduction {
   background-image: url(images/back1.jpg) ; 
   background-size: 100%;
-  
-
 }
 section {
   margin-top: 50px;
   margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    width: 1440px; 
-    margin: 0px auto 0px auto;
-    /* background-color:#F4F4DB;; */
-    background-color: #F7F7F7; 
+  display: flex;
+  justify-content: center;
+  width: 1440px; 
+  margin: 0px auto 0px auto;
+  background-color: #F7F7F7; 
 }
 footer {
   margin-top: 50px;
   margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    width: 1440px; 
-    margin: 0px auto 0px auto;
-    /* background-color:#F4F4DB;; */
-    background-color: #F7F7F7; 
+  display: flex;
+  justify-content: center;
+  width: 1440px; 
+  margin: 0px auto 0px auto;
+  background-color: #4B4444;
+ 
 
 }
+
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer .btn ,footer ul,footer li {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  color:#F7F7F7;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -60,22 +55,13 @@ header {
 
 
 }
-.img {
-  
-background-image: url('images/plast600.jpg');
-/* background */
-    width: 600px;
-    /* height: 200px; */
-    /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 0 0 16px 16px #F4F4DB inset;
-}
+
 
 div {
-  /* background-color: #FFFFDF; */
-  /* background-color:#F4F4DB; */
+  
   padding:0px;
   margin:  0px;
-  /* width: fit-content; */
+ 
 }
 h4, h2 {
     text-align: center ;
@@ -83,7 +69,7 @@ h4, h2 {
 .card {
     width:350px;
     height: 450px;
-    background-color:#4654A3;
+    background-color:#B3CCCF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,8 +78,8 @@ h4, h2 {
 }
 .cardd {
     width:300px;
-    height: 450px;
-    background-color: #384177;
+    height: 400px;
+    background-color: #B3CCCF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,8 +87,8 @@ h4, h2 {
 }
 .card3 {
   width:300px;
-  height: 450px;
-  background-color: #384177;
+  height: 500px;
+  background-color: #B3CCCF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +99,7 @@ h4, h2 {
 .card4 {
   width:500px;
   height: 450px;
-  background-color: #384177;
+  background-color: #B3CCCF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +107,9 @@ h4, h2 {
   padding-right: 20px;
 
 }
-
+h2 {
+  font-size: 30px;
+}
 .imgg {
   align-self: center;
 }
@@ -135,25 +123,24 @@ h4, h2 {
 
 }
 .screen1 {
-    margin: 0px auto 0px auto;
-     width: 1100px; 
-    /* display: inline-flex; */
-    justify-content: space-between;
-    margin-bottom: 50px;
+  margin: 0px auto 0px auto;
+  /* width: 1100px;  */
+   
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .screen2 {
     margin: 0px auto 0px auto;
-     width: 1100px; 
-     /* padding-left: 100px;
-     padding-right: 100px; */
+    /* width: 1100px;  */
+     
     display: inline-flex;
     justify-content: space-between;
 }
 
-.screen3 {
+.screen {
  
     margin: 0px auto 0px auto;
-    width: 1200px; 
+    /* width: 1200px;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,10 +151,11 @@ h4, h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* margin-bottom: 45px; */
 
 }
 .slider {
-    width: 1200px; 
+  
     display: flex;
     /* display: inline-flex; */
     /* justify-content: space-between; */
@@ -179,21 +167,17 @@ h4, h2 {
 
 }
 .slider3 {
-  width: 1200px; 
+ 
   display: flex;
-  
-   justify-content: space-between; 
-  
-
-flex-wrap: wrap;
-align-content: space-around;
-  /* justify-content: center; */
-  
-
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .content {
   margin-top: 70px;
+  margin-bottom: 70px;
+  width: 1200px; 
 }
 
 .btn {
@@ -226,34 +210,6 @@ align-content: space-around;
 .text {
   width : 600px ;
 }
-/* .hideslider {
-  display:none;
-} */
-/* .withslider{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-} */
-/* .withslider div{
-    display: flex;
-    flex-direction: column;
-    
-    
-} */
-
-/* .introduction {
-    
-    display: inline-flex;
-    justify-content: space-between;
-    
-  
-} */
-
-/* .spbet {
-  height: 2000px;
-} */
-
 
 
 
@@ -349,31 +305,22 @@ align-content: space-around;
     opacity: 1.0;
   } 
   
-  /* div.ant-carousel-dots {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    z-index: 30;
-    text-align: center;
-  }
-  
-  span.ant-dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    padding: 0;
-    display: inline-block;
-    background-color: #BBB;
-    border-radius: 5px;
-    cursor: pointer;
-  }  */
 
   @media screen and (max-width: 1400px) {
     body {
-      width: 1100px;
+      width: 1200px;
     }
+    section, header, footer{
+      width : 1200px;
+    }
+    .content, .screen, .screen1, .screen2 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 800x; 
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+ 
 
 
   }
