@@ -17,16 +17,15 @@ background: linear-gradient(0deg, rgba(169,229,230,1) 0%, rgba(196,196,196,0.627
 background: linear-gradient(0deg, rgba(122,127,158,1) 4%, rgba(208,219,219,1) 98%); */
 
 }
-p, h1, h2, h3, h4, h5, .btn  {
+p, h1, h2, h3, h4, h5, .btn , ul, li {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
     color:#270949;
 }
 .introduction {
-  background-image: url(images/fonsrc2rasm.jpg) ; 
+  background-image: url(images/back1.jpg) ; 
   background-size: 100%;
   
-  /* background-filter: blur(10px); */
 
 }
 section {
@@ -56,18 +55,13 @@ header {
     justify-content: center;
      width: 1440px; 
     margin: 0px auto 0px auto;
-    /* background: rgb(7,13,52);
-background: linear-gradient(135deg, rgba(7,13,52,1) 0%, rgba(244,244,219,1) 52%);  */
-    /* background-color:#F4F4DB;; */
-    /* background-color: #F7F7F7;  */
-    background-color: #C8CDD0;
+    background-image: url(images/back1.jpg) ;
+    background-repeat: no-repeat;
+
 
 }
 .img {
-   /* padding:15px;  */
-  /* -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75); */
+  
 background-image: url('images/plast600.jpg');
 /* background */
     width: 600px;
@@ -75,10 +69,7 @@ background-image: url('images/plast600.jpg');
     /* you need to match the shadow color to your background or image border for the desired effect*/
     box-shadow: 0 0 16px 16px #F4F4DB inset;
 }
-/* .introduction {
-  background: rgb(7,13,52);
-background: linear-gradient(135deg, rgba(7,13,52,1) 0%, rgba(244,244,219,1) 52%); 
-} */
+
 div {
   /* background-color: #FFFFDF; */
   /* background-color:#F4F4DB; */
@@ -108,15 +99,29 @@ h4, h2 {
     justify-content: center;
   margin: 40px;
 }
-/* .content {
-    margin: 0px auto 0px auto;
-     width: 1200px; 
-    display: inline-flex;
-    justify-content: space-between;
-     justify-content: center; 
+.card3 {
+  width:300px;
+  height: 450px;
+  background-color: #384177;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
+}
+.card4 {
+  width:500px;
+  height: 450px;
+  background-color: #384177;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
-} */
+}
+
 .imgg {
   align-self: center;
 }
@@ -132,7 +137,7 @@ h4, h2 {
 .screen1 {
     margin: 0px auto 0px auto;
      width: 1100px; 
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -146,6 +151,7 @@ h4, h2 {
 }
 
 .screen3 {
+ 
     margin: 0px auto 0px auto;
     width: 1200px; 
     display: flex;
@@ -170,6 +176,19 @@ h4, h2 {
   align-content: space-around;
     /* justify-content: center; */
     
+
+}
+.slider3 {
+  width: 1200px; 
+  display: flex;
+  
+   justify-content: space-between; 
+  
+
+flex-wrap: wrap;
+align-content: space-around;
+  /* justify-content: center; */
+  
 
 }
 
@@ -204,7 +223,9 @@ h4, h2 {
   border: 2px solid #FF5B3D;
   
 }
-
+.text {
+  width : 600px ;
+}
 /* .hideslider {
   display:none;
 } */
@@ -220,9 +241,7 @@ h4, h2 {
     
     
 } */
-.text {
-    width : 400px ;
-}
+
 /* .introduction {
     
     display: inline-flex;
