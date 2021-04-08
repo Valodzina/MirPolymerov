@@ -452,11 +452,11 @@ h2 {
 
     }
     .card3 {
-      width: 85%;
+      width: 95%;
       height:  600px;
     }
     
-    .map .btn {
+    .map, .btn {
       width: 85%;
     }
 
