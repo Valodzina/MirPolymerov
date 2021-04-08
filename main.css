@@ -14,6 +14,7 @@ p, h1, h2, h3, h4, h5, .btn , ul, li {
     text-align: justify;
     color:#270949;
 }
+
 .introduction {
   /* background-image: url(images/back1.jpg) ;  */
   background-size: 100%;
@@ -46,20 +47,22 @@ footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer .btn ,fo
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-     width: 1440px; 
-    margin: 0px auto 0px auto;
-    background-image: url(images/back1.jpg) ;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1440px; 
+  margin: 0px auto 0px auto;
+  background-image: url(images/back1.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  /* background-size: 100%; */
 
 
 }
 
 div {
   
-  padding:0px;
+  padding: 0px;
   margin:  0px;
   
  
@@ -167,11 +170,15 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     /* margin-bottom: 45px; */
 
 }
+.topic {
+  text-align: center;
+}
 .slider {
-  
+  align-self: center;
   width :1200px;
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +187,7 @@ h2 {
 
 }
 .slider3 {
- 
+  align-self: center;
   display: flex;
   justify-content: space-between; 
   flex-wrap: wrap;
@@ -192,12 +199,16 @@ h2 {
   margin-top: 70px;
   margin-bottom: 70px;
   width: 1200px; 
+  display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
 .btn {
   color: #F7F7F7; 
-  
-  width: 200px;
+  align-self: center;
+  text-align: center;
+  width: 400px;
   height: 50px;
   background: #270949;
   box-shadow:none;
@@ -242,23 +253,23 @@ h2 {
   
   @media screen and (min-width: 991px) and (max-width: 1399px) {
     .ant-carousel {
-      max-width: 800px;
+      max-width: 85%;
     }
   }
   
   @media screen and (max-width: 990px) {
     .ant-carousel {
-      max-width: 700px;
+      max-width: 85%;
     }
   }
   @media screen and (max-width: 767px) {
     .ant-carousel {
-      max-width: 500px;
+      max-width: 85%;
     }
   }
   @media screen and (max-width: 575px) {
     .ant-carousel {
-      max-width: 400px;
+      max-width: 85%;
     }
   }
   
@@ -366,6 +377,7 @@ h2 {
     .card4 {
       margin-bottom: 20px ; 
     }
+   
 
 
 
@@ -373,6 +385,37 @@ h2 {
    }
   @media (max-width: 1199px){
     body {
+      width: 100%;
+    }
+    section, header, footer, .section3{
+      width : 100%;
+    }
+    .content, .screen, .screen1, .screen2, .slider, .slider3, .str {
+      justify-content:center;
+      display:flex;
+      flex-direction: column;
+
+      width: 85%; 
+     
+    }
+    .text {
+      width: 85%;
+
+    }
+    .card3 {
+      width : 340px;
+      height:  600px;
+    }
+    .card4 {
+      width : 85%;
+     
+    }
+    .map {
+      width: 65%;
+    }
+    
+
+    /* body {
       width: 900px;
     }
     section, header, footer, .section3{
@@ -382,94 +425,56 @@ h2 {
  
       width: 800px; 
      
-    }
+    } */
 
  
    
    }
 
   @media (max-width: 991px){
+
     body {
-      width: 766px;
+      width: 100%;
     }
     section, header, footer, .section3{
-      width : 766px;
+      width : 100%;
     }
     .content, .screen, .screen1, .screen2, .slider, .slider3, .str {
-     
-      width: 700px; 
+      justify-content:center;
+      display:flex;
+      flex-direction: column;
+
+      width: 85%; 
      
     }
+    .text {
+      width: 85%;
 
+    }
     .card3 {
-      width : 700px;
-      height:  300px;
+      width : 340px;
+      height:  600px;
+    }
     
-    }
- 
-
-
     .map {
-      width: 500px;
+      width: 85%;
     }
+
+  
    }
   
   @media (max-width: 767px){
-    body {
-      width: 570px;
-    }
-    section, header, footer, .section3{
-      width : 570px;
-     background-size: cover;
-    }
-    .content, .screen, .screen1, .screen2, .slider, .slider3, .str {
-
-      width: 500px; 
-     
-    }
+ 
     .screen2 {
       justify-content:center;
       display:flex;
       flex-direction: column;
     }
 
-    .card3 {
-      width : 500px;
-      height:  400px;
-      
-    }
-
  
-    .text {
-      width: 400px;
-
-    }
    }
   
-  @media (max-width: 575px){ 
-    body {
-      width: 400px;
-    }
-    section, header, footer, .section3{
-      width : 400px;
-    }
-    .content, .screen, .screen1, .screen2, .slider, .slider3, .str {
 
-      width: 350px; 
-     
-    }
-    .text {
-      width: 350px;
-
-    }
-    .card3 {
-      width : 340px;
-      height:  450px;
-    }
-    
-    .map {
-      width: 350px;
-    }
 
 
   }
