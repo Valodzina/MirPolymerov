@@ -187,6 +187,7 @@ h2 {
 
 }
 .slider3 {
+  width :1200px;
   align-self: center;
   display: flex;
   justify-content: space-between; 
@@ -200,8 +201,15 @@ h2 {
   margin-bottom: 70px;
   width: 1200px; 
   display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     /* justify-content: center; */
+}
+.contentfoot {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 1200px; 
+  display: flex;
+    
 }
 
 .btn {
@@ -471,13 +479,22 @@ h2 {
       flex-direction: column;
     }
 
+
  
    }
+   @media  (max-width: 575px) {
+    .card {
+      width: 100%;
+    }
+    .ant-carousel-element {
+      width: 100%;
+    }
+  }
   
 
 
 
-  }
+
 
 
 
