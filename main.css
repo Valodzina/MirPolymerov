@@ -424,7 +424,7 @@ h2 {
     .map {
       width: 65%;
     }
-    .imgg {
+    .img1 {
       width : 65%
     }
 
@@ -479,7 +479,7 @@ h2 {
       display:flex;
       flex-direction: column;
     }
-    .imgg {
+    .img1 {
       width : 75%
     }
 
