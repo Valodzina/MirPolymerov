@@ -43,7 +43,7 @@ footer {
 
 }
 
-footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer .btn ,footer ul,footer li {
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer .btn ,footer ul,footer li, footer a {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
   color:#F7F7F7;
