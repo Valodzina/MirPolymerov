@@ -6,14 +6,14 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 1440px;
-    background-color:  rgba(235,235,235,1);
+    background-color: #DFD1CD;
    
-
+    /* #D8CDCA */
 }
 p, h1, h2, h3, h4, h5, .btn , ul, li {
     font-family: 'Open Sans', sans-serif;
-   
-    color:#1D0737;
+    /* font-family: 'Cormorant Garamond', serif; */
+    color:#2A1717;
 }
 p {
   text-align: justify;
@@ -44,7 +44,11 @@ footer {
 
 }
 .section1 {
-  background-image: url(images/oboi11.png);
+  /* background-image: url(images/oboi11.png); */
+  /* background-color: #EE771A; */
+}
+.sec3 {
+  background-color: #CB9368;
 }
 
 footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer .btn ,footer ul,footer li, footer a {
@@ -85,7 +89,9 @@ h4, h2 {
 .card {
     width:350px;
     height: 450px;
-    background-color:#DDCAC7;
+    background-color:#CEBCB6;
+    border-radius: 4px;
+    box-shadow: 0.4em 0.4em 5px rgba(191,138,123,0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +107,7 @@ h4, h2 {
 .cardd {
     width:300px;
     height: 400px;
-    background-color: #DDCAC7;
+    background-color: #EA8344;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,30 +234,31 @@ h2 {
 
 .btn {
   color: #F7F7F7; 
+  font-size: 18px;
   align-self: center;
   text-align: center;
   width: 400px;
   height: 50px;
-  background: #270949;
+  background: #2A1717;
   box-shadow:none;
   /* border: none; */
-  border: 2px solid #270949;
+  border: 2px solid #2A1717;
 }
 
 .btn:hover{
-  background: #F95B3D;
+  background: #DF651A;
   box-shadow:none;
   /* border: none; */
-  border: 2px solid #F95B3D;
+  border: 2px solid #DF651A;
   cursor: pointer;;
 }
 
 .btn:active{
   
-  background:#FF5B3D;
+  background:#DF651A;
   box-shadow:none;
   /* border: none; */
-  border: 2px solid #FF5B3D;
+  border: 2px solid #DF651A;
   
 }
 .text {
@@ -260,10 +267,10 @@ h2 {
 .map {
   width: 600px;
 }
-.section4 {
+/* .section4 {
   background: rgb(235,235,235);
   background: linear-gradient(180deg, rgba(235,235,235,1) 18%, rgba(75,68,68,1) 100%);
-}
+} */
 
 
 
@@ -325,6 +332,7 @@ h2 {
     width: auto;
     margin: 0;
     padding: 0;
+    padding-bottom: 9px;
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
