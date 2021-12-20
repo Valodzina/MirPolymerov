@@ -1,0 +1,219 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+
+
+$col1:#DFD1CD;
+$col2:#4B4444;
+$col3:#F7F7F7;
+$col4:#EA8344;
+
+@mixin card-pemplate ($p,$col) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    
+    padding: $p;
+    background-color: $col;
+    h4 {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 90%;
+    }
+
+
+
+}
+
+body {
+    
+    width: 100%;
+    max-width: 100%;
+
+    img {
+        max-width: 80%;
+    }
+}
+
+.wrapper {
+    
+    width: 100%;
+    max-width: 100%;
+
+    .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+
+.card_second_hand {
+
+    @include card-pemplate(15px,$col1);
+    width: 400px;
+
+}
+.cards_materials {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >div {
+        @include card-pemplate(15px,$col2);
+        width: 30%;
+    }
+    // .hide__part {
+    //     >div {
+    //         @include card-pemplate(15px,$col2);
+    //     }
+
+    // }
+}
+.cards_machines {
+    width: 100%;
+    min-width: 0;
+    max-width: 1200px;
+    //height:400px;
+    background-color: blue;
+   // display: flex;
+   padding-left: 15px;
+   padding-right: 15px;
+
+    
+    .card_machines {
+        min-height: 0px;
+        //max-height: 400px;
+        margin: 15px;
+        height:400px;
+
+        @include card-pemplate(0px,$col1);
+        //align-self: stretch;
+        
+    }
+
+}
+header {
+    background-image: url(images/back1.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  //min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  
+
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 43%;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+.next {
+  right: 4px;
+}
+.prev {
+  left: 4px;
+}
+.prev :hover,
+.next :hover {
+  cursor: pointer;
+ }

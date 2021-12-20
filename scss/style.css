@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body img {
+  max-width: 80%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wrapper .content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_second_hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 0;
+  padding: 15px;
+  background-color: #DFD1CD;
+  width: 400px;
+}
+
+.card_second_hand h4 {
+  margin-bottom: 20px;
+}
+
+.card_second_hand img {
+  width: 90%;
+}
+
+.cards_materials {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards_materials > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 0;
+  padding: 15px;
+  background-color: #4B4444;
+  width: 30%;
+}
+
+.cards_materials > div h4 {
+  margin-bottom: 20px;
+}
+
+.cards_materials > div img {
+  width: 90%;
+}
+
+.cards_machines {
+  width: 100%;
+  min-width: 0;
+  max-width: 1200px;
+  background-color: blue;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cards_machines .card_machines {
+  min-height: 0px;
+  margin: 15px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 0;
+  padding: 0px;
+  background-color: #DFD1CD;
+}
+
+.cards_machines .card_machines h4 {
+  margin-bottom: 20px;
+}
+
+.cards_machines .card_machines img {
+  width: 90%;
+}
+
+header {
+  background-image: url(images/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 43%;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next {
+  right: 4px;
+}
+
+.prev {
+  left: 4px;
+}
+
+.prev :hover,
+.next :hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
