@@ -70,65 +70,112 @@ a:hover {
     text-decoration: none;
 }
 
-ul li {
-    list-style: none;
-}
+// ul li {
+//     list-style: none;
+// }
 
 img {
     vertical-align: top;
 }
+div, section,header,footer {
+    margin: 0px;
+}
 
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-size: inherit;
+//     font-weight: inherit;
+// }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
+h6,
+p,
+a,
+button,
+li {
+    font-family: 'Open Sans', sans-serif;
+    color:#2A1717;
 }
+@mixin mfont ($s,$w,$m){
+    font-size: $s;
+    font-weight: $w;
+    margin-top: $m;
+    margin-bottom: $m;
+
+ }
+
+h2{
+    @include mfont (32px,400,16px);
+}
+
+
+
 
 /*--------------------*/
 
 
-$col1:#DFD1CD;
+$col1:#d8d2d1;
 $col2:#4B4444;
-$col3:#F7F7F7;
+$col3:#F8F8F8;
 $col4:#EA8344;
 
-@mixin card-pemplate ($p,$col) {
+
+@mixin cards-pemplate ($w,$h,$m){
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    >div {
+        width: $w;
+        margin-right:$m;
+        margin-left: $m;
+        height: $h;
+
+    }
+}
+@mixin card-pemplate ($m,$p,$col,$mwi,$mhi) {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 0;
     
     padding: $p;
+    margin-top: $m;
+    margin-bottom: $m;
     background-color: $col;
     h4 {
         margin-bottom: 20px;
     }
     img {
-        width: 90%;
+        max-width: $mwi;
+        max-height: $mhi;
     }
 
 
 
 }
-
 body {
     
     width: 100%;
     max-width: 100%;
+    background-color: $col1;
 
     img {
         max-width: 80%;
     }
 }
-
 .wrapper {
     
     width: 100%;
     max-width: 100%;
+    
 
     .content {
         width: 90%;
@@ -137,67 +184,60 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 0px 30px 0px;
+        .header {
+            max-width: 1200px;
+            margin-left: 0px;
+            margin-right: auto;
+            div {
+                max-width: 400px;
+            }
+        }
 
-    }
-
-}
-
-.card_second_hand {
-
-    @include card-pemplate(15px,$col1);
-    width: 400px;
-
-}
-.cards_materials {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    >div {
-        @include card-pemplate(15px,$col2);
-        width: 30%;
-    }
-    // .hide__part {
-    //     >div {
-    //         @include card-pemplate(15px,$col2);
-    //     }
-
-    // }
-}
-.cards_machines {
-    width: 100%;
-    min-width: 0;
-    max-width: 1200px;
-    //height:400px;
-    background-color: blue;
-   // display: flex;
-   padding-left: 15px;
-   padding-right: 15px;
-
-    
-    .card_machines {
-        min-height: 0px;
-        //max-height: 400px;
-        margin: 15px;
-        height:400px;
-
-        @include card-pemplate(0px,$col1);
-        //align-self: stretch;
-        
     }
 
 }
 header {
     background-image: url(images/back1.jpg) ;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  //min-width: 100%;
-  width: 100%;
-  max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
   
 
 }
+#wrapper-machines{
+    background-color: $col1 ;
+}
+.cards_machines {
+    width: 100%;
+    min-width: 0;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 
+    
+    .card_machines {
+        @include card-pemplate(0px, 15px,$col3,80%,60%);
+        min-height: 0px;
+        margin: 15px;
+        height:340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+        img {
+            margin: auto;
+        }
+        
+    }
+
+}
 .prev,
 .next {
   position: absolute;
@@ -217,3 +257,74 @@ header {
 .next :hover {
   cursor: pointer;
  }
+#wrapper-materials{
+    background-color: $col1 ;
+}
+.cards_materials {
+    @include cards-pemplate (30%,300px,1%);
+    >div {
+        @include card-pemplate(20px, 15px,$col4, 90%,80%);   
+    }
+    @media screen and (max-width: 767px) {
+        >div {
+            width: 345px;
+            margin-right:auto ;
+            margin-left:auto ;
+            
+        }
+      }
+}
+#wrapper-adds{
+    background-color: $col2 ;
+}
+.cards_adds {
+    @include cards-pemplate (30%,320px,1%);
+    >div {
+        @include card-pemplate(20px, 25px,$col1, 100%,100%);     
+    }
+    @media screen and (max-width: 767px) {
+        >div {
+            width: 345px;
+            margin-right:auto ;
+            margin-left:auto ;
+            height:fit-content;
+            
+        }
+      }
+}
+#wrapper-second_hand{
+    background-color: $col1 ;
+}
+.cards_second_hand {
+   @include cards-pemplate (400px,350px,1%);
+    >div {
+        @include card-pemplate(10px,15px,$col3,95%,90%); 
+    }
+    @media screen and (max-width: 930px) {
+        >div {
+            width: 500px;
+            margin-right:auto ;
+            margin-left:auto ;
+            height:fit-content;
+            
+        }
+      }
+}
+#footer{
+    background-color: $col2 ;
+}
+.footer__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    >img {
+        width: 600px;
+    }
+    .footer__img{
+        width:fit-content;
+
+    }
+}
+
