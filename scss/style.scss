@@ -108,11 +108,34 @@ li {
     font-weight: $w;
     margin-top: $m;
     margin-bottom: $m;
+    line-height: $s*1.2;
+    
 
  }
+h1 {
+    @include mfont (32px,400,16px);
 
+}
 h2{
     @include mfont (32px,400,16px);
+    text-align: center;
+}
+h3{
+    @include mfont (22px,400,16px);
+    
+}
+h4{
+    @include mfont (20px,600,16px);
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    @include mfont (18px,400,10px);
+}
+li {
+    
+    @include mfont (18px,400,10px);
 }
 
 
@@ -190,7 +213,7 @@ body {
             margin-left: 0px;
             margin-right: auto;
             div {
-                max-width: 400px;
+                max-width: 500px;
             }
         }
 
@@ -261,9 +284,9 @@ header {
     background-color: $col1 ;
 }
 .cards_materials {
-    @include cards-pemplate (30%,300px,1%);
+    @include cards-pemplate (30%,320px,1%);
     >div {
-        @include card-pemplate(20px, 15px,$col4, 90%,80%);   
+        @include card-pemplate(20px, 15px,$col4, 80%,70%);   
     }
     @media screen and (max-width: 767px) {
         >div {
@@ -276,15 +299,18 @@ header {
 }
 #wrapper-adds{
     background-color: $col2 ;
+    h2 {
+        color: $col3;
+    }
 }
 .cards_adds {
-    @include cards-pemplate (30%,320px,1%);
+    @include cards-pemplate (30%,520px,1%);
     >div {
         @include card-pemplate(20px, 25px,$col1, 100%,100%);     
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1256px) {
         >div {
-            width: 345px;
+            width: 90%;
             margin-right:auto ;
             margin-left:auto ;
             height:fit-content;
@@ -298,7 +324,7 @@ header {
 .cards_second_hand {
    @include cards-pemplate (400px,350px,1%);
     >div {
-        @include card-pemplate(10px,15px,$col3,95%,90%); 
+        @include card-pemplate(10px,15px,$col3,95%,80%); 
     }
     @media screen and (max-width: 930px) {
         >div {
@@ -312,6 +338,10 @@ header {
 }
 #footer{
     background-color: $col2 ;
+    h2, h3, a, p {
+      color: $col3;   
+    }
+   
 }
 .footer__content {
     width: 100%;

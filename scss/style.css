@@ -92,11 +92,55 @@ li {
   color: #2A1717;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 38.4px;
+}
+
 h2 {
   font-size: 32px;
   font-weight: 400;
   margin-top: 16px;
   margin-bottom: 16px;
+  line-height: 38.4px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 26.4px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 21.6px;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 21.6px;
 }
 
 /*--------------------*/
@@ -139,7 +183,7 @@ body img {
 }
 
 .wrapper .content .header div {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 header {
@@ -249,7 +293,7 @@ header {
   width: 30%;
   margin-right: 1%;
   margin-left: 1%;
-  height: 300px;
+  height: 320px;
 }
 
 .cards_materials > div {
@@ -275,8 +319,8 @@ header {
 }
 
 .cards_materials > div img {
-  max-width: 90%;
-  max-height: 80%;
+  max-width: 80%;
+  max-height: 70%;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,6 +333,10 @@ header {
 
 #wrapper-adds {
   background-color: #4B4444;
+}
+
+#wrapper-adds h2 {
+  color: #F8F8F8;
 }
 
 .cards_adds {
@@ -307,7 +355,7 @@ header {
   width: 30%;
   margin-right: 1%;
   margin-left: 1%;
-  height: 320px;
+  height: 520px;
 }
 
 .cards_adds > div {
@@ -337,9 +385,9 @@ header {
   max-height: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1256px) {
   .cards_adds > div {
-    width: 345px;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     height: -webkit-fit-content;
@@ -395,7 +443,7 @@ header {
 
 .cards_second_hand > div img {
   max-width: 95%;
-  max-height: 90%;
+  max-height: 80%;
 }
 
 @media screen and (max-width: 930px) {
@@ -411,6 +459,10 @@ header {
 
 #footer {
   background-color: #4B4444;
+}
+
+#footer h2, #footer h3, #footer a, #footer p {
+  color: #F8F8F8;
 }
 
 .footer__content {
