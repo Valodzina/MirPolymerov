@@ -282,6 +282,33 @@ header {
  }
 #wrapper-materials{
     background-color: $col1 ;
+
+    .btn {
+        color: $col3; 
+        font-size: 18px;
+        align-self: center;
+        text-align: center;
+        width: 400px;
+        height: 50px;
+        background: $col2;
+        box-shadow:none;
+        border: 2px solid $col2;
+      }
+      
+      .btn:hover{
+        background: $col4;
+        box-shadow:none;
+        border: 2px solid $col4;
+        cursor: pointer;;
+      }
+      
+      .btn:active{
+        
+        background:$col4;
+        box-shadow:none;
+        border: 2px solid $col4;
+        
+      }
 }
 .cards_materials {
     @include cards-pemplate (30%,320px,1%);
@@ -296,6 +323,13 @@ header {
             
         }
       }
+
+      
+
+
+
+
+
 }
 #wrapper-adds{
     background-color: $col2 ;
@@ -340,6 +374,9 @@ header {
     background-color: $col2 ;
     h2, h3, a, p {
       color: $col3;   
+    }
+    p {
+        margin-top: 35px;
     }
    
 }

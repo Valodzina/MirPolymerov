@@ -277,6 +277,36 @@ header {
   background-color: #d8d2d1;
 }
 
+#wrapper-materials .btn {
+  color: #F8F8F8;
+  font-size: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  background: #4B4444;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #4B4444;
+}
+
+#wrapper-materials .btn:hover {
+  background: #EA8344;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #EA8344;
+  cursor: pointer;
+}
+
+#wrapper-materials .btn:active {
+  background: #EA8344;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #EA8344;
+}
+
 .cards_materials {
   width: 100%;
   display: -webkit-box;
@@ -463,6 +493,10 @@ header {
 
 #footer h2, #footer h3, #footer a, #footer p {
   color: #F8F8F8;
+}
+
+#footer p {
+  margin-top: 35px;
 }
 
 .footer__content {
