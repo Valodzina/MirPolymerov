@@ -309,6 +309,11 @@ header {
         border: 2px solid $col4;
         
       }
+      @media screen and (max-width: 425px) {
+          .btn {
+              width: 300px;
+          }
+      }
 }
 .cards_materials {
     @include cards-pemplate (30%,320px,1%);

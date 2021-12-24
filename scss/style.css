@@ -307,6 +307,12 @@ header {
   border: 2px solid #EA8344;
 }
 
+@media screen and (max-width: 425px) {
+  #wrapper-materials .btn {
+    width: 300px;
+  }
+}
+
 .cards_materials {
   width: 100%;
   display: -webkit-box;
